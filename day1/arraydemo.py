@@ -1,16 +1,16 @@
-# usertype=['admin', 'manager','qa']
+usertype=['admin', 'manager','qa']
 
 
-# for utype in usertype:
-#     print(f'user types: {utype}')
+for utype in usertype:
+    print(f'user types: {utype}')
 
-#     for i,utype in enumerate(usertype):
-#         print(f'Index: {i}, - type: {utype}')
+    for i,utype in enumerate(usertype):
+        print(f'Index: {i}, - type: {utype}')
 
-# ranks=[3,9,5,6,7]
-# ranks.sort() 
-# for rank in ranks:
-#     print(f'ranks : {rank}')
+ranks=[3,9,5,6,7]
+ranks.sort() 
+for rank in ranks:
+    print(f'ranks : {rank}')
 
 
 

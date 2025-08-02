@@ -1,7 +1,7 @@
 hex_emps=[]
 i=0
 while i <2:
-    name = input("Enter emp name").strip()
+    name = input("Enter emp name : ").strip()
     if name.lower() == 'skip':
         print('skippingg')
         continue
@@ -9,7 +9,7 @@ while i <2:
         print('skippingg')
         break
     while True:
-        age=input("enter ahge :").strip()
+        age=input("enter age :").strip()
         if(age.isdigit()):
             age=int(age)
             break
@@ -17,12 +17,16 @@ while i <2:
             print('please enter valid age')
 
     city=input("enter city :").strip()
+    sal=int(input('enter salary :').strip())
+    dept=input('enter department : ').strip()
 
     # dictionary
     emp={
         'name':name        ,
         'age':age        ,
-        'city':city
+        'city':city,
+        'sal':sal,
+        'dept':dept
     }
 
     hex_emps.append(emp)
@@ -30,4 +34,4 @@ while i <2:
 
 print("Emplyeeeeeee")
 for index,emp in enumerate(hex_emps,start=1):
-    print(f" {index}: EmpName: {emp['name']} - Age: {emp['age']} - City: {emp['city']}")
+    print(f" {index}: EmpName: {emp['name']} - Age: {emp['age']} - City: {emp['city']} - sal: {emp['sal']} - dept: {emp['dept']}")
